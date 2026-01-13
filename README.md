@@ -38,4 +38,4 @@ To view the portfolio, simply open the index.html file in your web browser.
 
 ## Contact
 
-If you'd like to get in touch, please email me at [your email address] or connect with me on LinkedIn at [your LinkedIn profile].
+If you'd like to get in touch, please email me at tomisinakin6@gmail.com.
