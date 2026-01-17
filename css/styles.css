@@ -6,257 +6,128 @@
 
 body {
     font-family: "Cormorant Garamond", serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    p, li {
+        font-family: "Montserrat", sans-serif;
+    }
 }
 
-.body {
-    width: 49vw;
-}
-
-.head {
-    width: 47vw;
-    height: 100vh;
-    background-color: #af948b;
-    position: fixed;
-    right: 0;
-    top: 0;
-}
-
-.head>img {
-    /* border: 1px solid black; */
-    width: 400px;
-    /* display: flex; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto
-        /* align-items: center; */
-        /* justify-content: center; */
+.main-section {
+    flex: 0 1 40vw;
+    padding: 20px;
 }
 
 .navBar {
-    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+        p {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.2rem;
+        margin-left: 20px;
+        color: #000000;
+        }
+
+        .nav {
+        display: flex;
+        gap: 20px;
+
+            li {
+            list-style: none;
+            gap: 10px;
+            font-family: "Cormorant Garamond", serif;
+                a {
+                color: #000000;
+                text-decoration: none;
+                font-size: 1rem;
+                }
+            }
+        }
 }
 
-.navBar>p {
-    font-size: 1.1875rem;
-    margin-left: 40px;
-    color: #000000;
+.header_section {
+    padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+        h1 {
+        font-size: 3rem;
+        }
+
+        #role {
+        font-size: 1.8rem;
+        }
+
+        .contact_information {
+            list-style: none;
+            li {
+            font-size: 0.9rem;
+            margin: 10px 0;
+                a {
+                color: #000000;
+                margin: 0 5px;
+                }
+            }
+        }
 }
 
-.nav {
-    display: flex;
-    gap: 20px;
+.info_section {
+    padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+    font-size: 0.9rem;
+    line-height: 30px;
+    }
 }
 
-.nav li {
+.skill, .achievements, .experience, .education {
+    ul {
+    line-height: 30px;
+    font-size: 0.9rem;
     list-style: none;
-    gap: 10px;
+    }
 }
 
-.nav li a {
-    color: #000000;
-    text-decoration: none;
-}
-
-.info {
-    /* border: 1px solid black; */
-    padding: 200px 100px;
-    /* margin: 0; */
-    /* margin-top: 100px; */
-}
-
-.info>h1 {
-    font-size: 5.3125rem;
-}
-
-#role {
-    font-size: 1.75rem;
-    /* margin-bottom: 100px; */
-}
-
-.contact_information p {
-    font-size: 0.9375rem;
-    font-family: "Montserrat", sans-serif;
-    margin: 10px 0;
-}
-
-.contact_information p a {
-    color: #000000;
-    margin: 0 5px;
-}
-
-.about>h2,
-.skill>h2,
-.experience>h2,
-.education>h2,
-.achievements>h2,
-.contact>h2 {
-    font-size: 1.375rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.9375rem;
-    line-height: 35px;
-}
-
-.skill {
-    /* margin: 350px 100px; */
-}
-
-.skill ul,
-.achievements ul {
-    line-height: 35px;
-    font-size: 0.9375rem;
-    font-family: "Montserrat", sans-serif;
-}
-
-.experience ul,
-.education ul {
-    line-height: 35px;
-    font-size: 0.9375rem;
-    font-family: "Montserrat", sans-serif;
-    list-style: none;
-}
-
-.contact p {
-    padding-bottom: 5px;
-    font-size: 0.9375rem;
-    font-family: "Montserrat", sans-serif;
-    margin: 10px 0;
+.contact {
+    b {
+        p {
+        font-size: 0.9rem;
+        }
+    }
+    p {
+        a {
+            color: black;
+        }
+    }
 }
 
 .footer {
     text-align: center;
-    padding-bottom: 25px;
-}
-
-
-@media (max-width: 1350px){
-    .info>h1 {
-        font-size: 4.3125rem;
-    }
-    .info {
-        padding:  200px 100px;
+    p {
+        font-size: 0.9rem;
     }
 }
-@media (max-width: 1250px){
-    .info>h1 {
-        font-size: 4rem;
-    }
-    .info {
-        padding: 200px 100px;
-    }
-}
-@media (max-width: 1150px){
-    .info>h1 {
-        font-size: 3.3125rem;
-    }
-    #role {
-        font-size: 1.5rem;
-    }
-    .info {
-        padding: 200px 70px;
-    }
-}
-@media (max-width: 950px){
-    .info>h1 {
-        font-size: 3rem;
-    }
-    .info {
-        padding: 150px 40px;
-    }
-    .head>img {
-        width: 350px;
-    }
-}
-@media (max-width: 850px){
-    .info>h1 {
-        font-size: 2.3125rem;
-    }
-    #role {
-        font-size: 1.35rem;
-    }
-    
-}
-@media (max-width: 750px) {
-    .head {
-        margin-top: 50px;
-        /* border: 1px solid; */
-        position: relative;
-        top: 0;
-        width: 100%;
-        height: 50vh;
-    }
 
-    .head>img {
-        /* visibility: hidden; */
-        width: 300px;
-        position: absolute;
-    }
+.profile-pic-section {
+    flex: 0 1 40vw;
+    height: 100vh;
+    background-color: #af948b;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
 
-    .body {
-        /* border: 1px solid; */
-        width: 100%;
-    }
-
-    .navBar {
-        left: 0;
-        right: 0;
-        top: 0;
-        margin: auto;
-        /* border: 1px solid; */
-        position: absolute;
-        display: block;
-        text-align: center;
-    }
-
-    .navBar nav {
-        display: none;
-    }
-
-    .info {
-        padding: 50px;
-    }
-    .info>h1 {
-        font-size: 2.3125rem;
-        text-align: center;
-    }
-    #role {
-        font-size: 1.0625rem;
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    .contact_information p {
-        font-size: 1rem;
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-        margin: 5px 0;
-    }
-    
-    .contact_information p a {
-        color: #000000;
-        margin: 0 5px;
-    }
-    .about>h2,
-    .skill>h2,
-    .experience>h2,
-    .education>h2,
-    .achievements>h2,
-    .contact>h2 {
-        font-size: 1.3125rem;
-        text-align: center;
-    }
-    .about p {
-        text-align: center;
+    img {
+    width: 50%;
     }
 }
